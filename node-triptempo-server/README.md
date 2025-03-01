@@ -40,6 +40,8 @@ If your want to create build production, run `yarn build`
 
 **Important**: If you want to re create database schema, run `yarn prisma:db`
 
+- You can see the app running at [http://localhost:3000](http://localhost:3000)
+
 ## My process
 
 ### What I learned
