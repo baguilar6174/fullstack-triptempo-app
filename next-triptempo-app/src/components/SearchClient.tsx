@@ -4,6 +4,7 @@ import React from 'react';
 import { type z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslations } from 'next-intl';
 
 import { Container } from './Container';
 import { Button } from './ui/button';
@@ -24,6 +25,9 @@ interface SearchProps {
 export const SearchClient: React.FC<SearchProps> = (props: SearchProps) => {
 	const { cities } = props;
 
+	const t = useTranslations('HomePage'); // for sync component
+	// const t = await getTranslations('HomePage'); // for async component
+
 	const isLoading = useTripItinerariesStore((state) => state.isLoading);
 	const tripItineraries = useTripItinerariesStore((state) => state.tripItineraries);
 	const error = useTripItinerariesStore((state) => state.error);
@@ -38,8 +42,8 @@ export const SearchClient: React.FC<SearchProps> = (props: SearchProps) => {
 			<Text tag="h1" className="text-center mt-5">
 				Trip Tempo
 			</Text>
-			<Text tag="h3">Where do you wanna go?</Text>
-			<Text tag="p">Find the perfect schedule for your trip!</Text>
+			<Text tag="h3">{t('title')}</Text>
+			<Text tag="p">{t('subtitle')}</Text>
 			<Form {...form}>
 				<form onSubmit={form.handleSubmit(onSubmit)} className="mt-5 grid grid-cols-1 lg:grid-cols-3 gap-8">
 					<FormField

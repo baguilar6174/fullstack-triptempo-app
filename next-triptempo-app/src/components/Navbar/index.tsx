@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { ButtonTheme } from './ButtonTheme';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 export const Navbar = (): JSX.Element => {
 	return (
@@ -12,6 +13,7 @@ export const Navbar = (): JSX.Element => {
 					</Link>
 					<div className="flex">
 						<ButtonTheme />
+						<LanguageSwitcher />
 					</div>
 				</div>
 			</div>
