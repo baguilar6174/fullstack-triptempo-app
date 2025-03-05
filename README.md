@@ -6,24 +6,8 @@ This project presents an application that allows the user to consult Cooperative
 
 ### Built with
 
-- Frontend
-  - React
-  - Next JS
-  - Typescript
-  - Eslint & Prettier
-  - Zustand
-  - Tailwind CSS
-  - Axios
-  - React Hook Form
-  - shadcn/ui
-- Backend
-  - Node
-  - Typescript
-  - Express
-  - Prisma
-  - bcryptjs
-  - jsonwebtoken
-  - winston
+- [Frontend](./next-triptempo-app/README.md)
+- [Backend](./node-triptempo-server/README.md)
 
 ## Development Features
 

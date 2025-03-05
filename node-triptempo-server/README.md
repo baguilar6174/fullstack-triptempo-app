@@ -44,6 +44,17 @@ If your want to create build production, run `yarn build`
 
 ## My process
 
+### Built with
+
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Prisma](https://www.prisma.io/)
+- [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [winston](https://www.npmjs.com/package/winston)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+
 ### What I learned
 
 - Environment variables
