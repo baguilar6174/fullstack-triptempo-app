@@ -1,7 +1,13 @@
 {
+	"NavBar": {
+		"language": "Language"
+	},
 	"HomePage": {
 		"title": "Where do you wanna go?",
 		"subtitle": "Find the perfect schedule for your trip!",
-		"language": "Language"
+		"whereFrom": "Where from?",
+		"whereTo": "Where to?",
+		"search": "Search",
+		"result": "We've found {results} results"
 	}
 }

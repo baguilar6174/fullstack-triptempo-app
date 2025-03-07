@@ -1,7 +1,13 @@
 {
+	"NavBar": {
+		"language": "Idioma"
+	},
 	"HomePage": {
 		"title": "A dónde quieres ir?",
 		"subtitle": "Encuentra el mejor horario para tu viaje!",
-		"language": "Idioma"
+		"whereFrom": "¿Desde dónde?",
+		"whereTo": "¿A dónde?",
+		"search": "Buscar",
+		"result": "Hemos encontrado {results} resultados"
 	}
 }

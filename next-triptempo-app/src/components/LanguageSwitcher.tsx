@@ -1,23 +1,23 @@
-// src/app/[locale]/LanguageSwitcher.tsx
-'use client'; // Mark this component as a Client Component
+'use client';
 
-import { useRouter, usePathname } from 'next/navigation'; // Use next/navigation instead of next/router
+import { useRouter, usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from './ui/select';
+import { ONE } from '../core';
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = (): JSX.Element => {
 	const router = useRouter();
 	const pathname = usePathname(); // Get the current pathname
-	const translations = useTranslations('HomePage'); // Use your translation namespace
+	const translations = useTranslations('NavBar'); // Use your translation namespace
 
-	const changeLanguage = (value: string) => {
+	const changeLanguage = (value: string): void => {
 		// Redirect to the new locale with the current pathname
 		router.push(`/${value}`);
 	};
 
 	return (
 		<div>
-			<Select onValueChange={changeLanguage} defaultValue={pathname.split('/')[1]}>
+			<Select onValueChange={changeLanguage} defaultValue={pathname.split('/')[ONE]}>
 				<SelectTrigger className="w-[180px]">
 					<SelectValue placeholder={translations('language')} />
 				</SelectTrigger>

@@ -54,7 +54,7 @@ export const SearchClient: React.FC<SearchProps> = (props: SearchProps) => {
 								<Select onValueChange={field.onChange} defaultValue={field.value}>
 									<FormControl>
 										<SelectTrigger>
-											<SelectValue placeholder="Where from?" />
+											<SelectValue placeholder={t('whereFrom')} />
 										</SelectTrigger>
 									</FormControl>
 									<SelectContent>{getCities(getValues('endCity'))}</SelectContent>
@@ -71,7 +71,7 @@ export const SearchClient: React.FC<SearchProps> = (props: SearchProps) => {
 								<Select onValueChange={field.onChange} defaultValue={field.value}>
 									<FormControl>
 										<SelectTrigger>
-											<SelectValue placeholder="Where to?" />
+											<SelectValue placeholder={t('whereTo')} />
 										</SelectTrigger>
 									</FormControl>
 									<SelectContent>{getCities(getValues('startCity'))}</SelectContent>
@@ -80,7 +80,7 @@ export const SearchClient: React.FC<SearchProps> = (props: SearchProps) => {
 							</FormItem>
 						)}
 					/>
-					<Button type="submit">Submit</Button>
+					<Button type="submit">{t('search')}</Button>
 				</form>
 			</Form>
 			{isLoading && <Loader />}
@@ -92,7 +92,7 @@ export const SearchClient: React.FC<SearchProps> = (props: SearchProps) => {
 			)}
 			{tripItineraries && tripItineraries.length !== ZERO && (
 				<React.Fragment>
-					<Text tag="p">We&apos;ve found {tripItineraries.length} results</Text>
+					<Text tag="p">{t('result', { results: tripItineraries.length })}</Text>
 					{tripItineraries.map((tripItinerary) => (
 						<ResultCard key={tripItinerary.id} tripItinerary={tripItinerary} />
 					))}
