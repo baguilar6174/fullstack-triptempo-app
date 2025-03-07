@@ -4,12 +4,6 @@
 
 ## Installation
 
-Clone this repository
-
-```bash
-git clone https://github.com/baguilar6174/fullstack-triptempo-app.git
-```
-
 Install dependencies
 
 ```bash
@@ -19,7 +13,7 @@ yarn
 
 Clone `.env.template` file and rename to `.env`.
 
-Replace your environment variables in `.env` file
+Replace your environment variables in `.env` file (you can use `.env.test` values for test environment)
 
 ## Running the app
 

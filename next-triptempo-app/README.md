@@ -2,12 +2,6 @@
 
 ## Installation
 
-Clone this repository
-
-```bash
-git clone https://github.com/baguilar6174/fullstack-triptempo-app.git
-```
-
 Install dependencies
 
 ```bash

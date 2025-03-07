@@ -2,16 +2,30 @@
 
 This project presents an application that allows the user to consult Cooperative schedules between different cities in Ecuador, the application shows the available schedules of the different cooperatives between two cities.
 
+## Running the app
+
+Clone this repository
+
+```bash
+git clone https://github.com/baguilar6174/fullstack-triptempo-app.git
+```
+
+### 1 - Backend
+
+See [node-triptempo-server/README.md](./node-triptempo-server/README.md)
+
+When you complete the backend, you can run the frontend
+
+### 2 - Frontend
+
+See [next-triptempo-app/README.md](./next-triptempo-app/README.md)
+
 ## My process
 
 ### Built with
 
 - [Frontend](./next-triptempo-app/README.md)
 - [Backend](./node-triptempo-server/README.md)
-
-## Development Features
-
--
 
 ## Improves
 
